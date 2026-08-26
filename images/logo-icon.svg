@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" fill="none">
+  <!-- Icon: rounded square -->
+  <rect x="0" y="0" width="80" height="80" rx="18" fill="#0B1D36"/>
+  
+  <!-- Play triangle (enlarged) -->
+  <path d="M26 24 L26 56 L58 40 Z" fill="#00B4D8"/>
+  
+  <!-- Signal arcs (expanded) -->
+  <path d="M52 28 Q66 40 52 52" stroke="#00B4D8" stroke-width="4" stroke-linecap="round" fill="none"/>
+  <path d="M58 20 Q78 40 58 60" stroke="#00B4D8" stroke-width="4" stroke-linecap="round" fill="none"/>
+</svg>
