@@ -374,12 +374,24 @@ p {
 /* Hero */
 .hero {
   padding: 8.5rem 0 5rem;
-  background: linear-gradient(160deg, #0B1D36 0%, #132F4C 50%, #1A3A5C 100%);
+  background-color: #0B1D36;
+  background-image:
+    linear-gradient(
+      160deg,
+      rgba(11, 29, 54, 0.88) 0%,
+      rgba(11, 29, 54, 0.78) 45%,
+      rgba(19, 47, 76, 0.72) 100%
+    ),
+    url('../images/hero-bg.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
   color: #fff;
   position: relative;
   overflow: hidden;
 }
 
+/* Soft cyan glow accent for brand consistency */
 .hero::before {
   content: '';
   position: absolute;
@@ -387,9 +399,10 @@ p {
   right: -10%;
   width: 600px;
   height: 600px;
-  background: radial-gradient(circle, rgba(0,180,216,0.15) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(0, 180, 216, 0.12) 0%, transparent 70%);
   border-radius: 50%;
   pointer-events: none;
+  z-index: 0;
 }
 
 .hero::after {
@@ -399,9 +412,10 @@ p {
   left: -5%;
   width: 400px;
   height: 400px;
-  background: radial-gradient(circle, rgba(247,127,0,0.1) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(0, 180, 216, 0.08) 0%, transparent 70%);
   border-radius: 50%;
   pointer-events: none;
+  z-index: 0;
 }
 
 .hero-content {
@@ -414,23 +428,27 @@ p {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  background: rgba(0,180,216,0.15);
-  color: var(--accent);
+  background: rgba(0, 180, 216, 0.22);
+  color: #7DE8FF;
   padding: 0.4rem 1rem;
   border-radius: 50px;
   font-size: 0.8125rem;
   font-weight: 600;
   margin-bottom: 1.5rem;
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(0, 180, 216, 0.25);
 }
 
 .hero h1 {
   color: #fff;
   margin-bottom: 1.25rem;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.35);
 }
 
 .hero .lead {
-  color: rgba(255,255,255,0.85);
+  color: rgba(255, 255, 255, 0.92);
   margin-bottom: 2rem;
+  text-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
   font-size: 1.2rem;
 }
 
